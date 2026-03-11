@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "name": "Japan 2025",
+  "countries": [
+    {
+      "name": "Japan",
+      "iso3166": "JPN"
+    }
+  ],
+  "dates": {
+    "from": "2025-02-18",
+    "to": "2025-03-07"
+  },
+  "days": [
+    {
+      "date": "2025-02-18",
+      "location": "Manchester",
+      "description": "Travel Day",
+      "activities": [
+        {
+          "order": 1,
+          "title": "Drive to Manchester Airport",
+          "completed": true,
+          "notes": "Drive went fine, but minimal parking at the airport"
+        }
+      ]
+    },
+    {
+      "date": "2025-02-19",
+      "locations": {
+        "start": "Manchester",
+        "end": "Tokyo"
+      },
+      "description": "Flight day",
+      "activities": [
+        {
+          "order": 1,
+          "title": "Fly to Tokyo",
+          "completed": true,
+          "notes": "Flying with Juneyao airlines. Flight was fine but it was difficult to sleep"
+        }
+      ],
+      "snacks": [
+        {
+          "name": "Real Gold Energy Drink",
+          "description": "Honey flavoured energy drink",
+          "rating": "7/10",
+          "image": "/home/iacna/dev/holiday-journal/api/assets/real_gold.jpg"
+        }
+      ]
+    }
+  ]
+}
