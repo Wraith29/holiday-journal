@@ -12,22 +12,29 @@ type CardProps = {
 };
 
 export default function HolidayCard({ details }: CardProps): ReactNode {
+	const dateRange = `${formatDate(details.startDate, DATE_FORMAT)} - ${formatDate(details.endDate, DATE_FORMAT)}`;
+
 	return (
 		<div className="card">
-			<div className="header-container">
-				<p className="header">{details.name}</p>
-				<p className="date-range">
-					{formatDate(details.startDate, DATE_FORMAT)} -{" "}
-					{formatDate(details.endDate, DATE_FORMAT)}
-				</p>
-			</div>
-
 			<div className="card-body">
-				<ImageCarousel images={details.coverImages} />
+				<div className="left-column">
+					<div>
+						<p className="header">{details.name}</p>
+						<p className="date-range">{dateRange}</p>
+					</div>
 
-				<Link className="details-link" to={`/holiday-details/${details.id}`}>
-					View Details
-				</Link>
+					<Link className="details-link" to={`/holiday-details/${details.id}`}>
+						View Details
+					</Link>
+				</div>
+
+				<div className="right-column">
+					{details.coverImages.length > 0 ? (
+						<ImageCarousel images={details.coverImages} />
+					) : (
+						<p>No images added yet!</p>
+					)}
+				</div>
 			</div>
 		</div>
 	);

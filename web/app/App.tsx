@@ -21,6 +21,13 @@ export default function App(): React.ReactNode {
 				},
 			],
 		},
+		{
+			id: 2,
+			name: "South Africa / Victoria Falls 2026",
+			startDate: "2025-05-02",
+			endDate: "2025-05-17",
+			coverImages: [],
+		},
 	];
 
 	return (
@@ -29,7 +36,7 @@ export default function App(): React.ReactNode {
 				<p className="page-title">Holiday Journal</p>
 				<ul className="entry-list">
 					{holidays.map((hol) => (
-						<li key={hol.id}>
+						<li className="entry" key={hol.id}>
 							<HolidayCard details={hol} />
 						</li>
 					))}

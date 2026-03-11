@@ -4,10 +4,6 @@
   border-radius: 9px;
 }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
-}
 
 .header {
   font-size: larger;
@@ -16,21 +12,23 @@
   margin-bottom: 5px;
 }
 
-.date-range {
-  margin-top: 0;
-  font-size: large;
-}
-
 .card-body {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  margin: 5px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .details-link {
+  width: fit-content;
+  text-decoration: none;
   border: 1px solid;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
-  text-decoration: none;
+  margin: 5px;
 }
