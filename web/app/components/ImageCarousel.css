@@ -1,4 +1,8 @@
-.carousel {
+.image-carousel {
+  height: 100%;
+}
+
+.pictures {
   display: flex;
   height: 100%;
   align-items: center;
@@ -20,4 +24,16 @@
   border: 1px solid;
   padding: 3px;
   border-radius: 50%;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.progress {
+  margin: 0;
+  padding: 5px;
 }

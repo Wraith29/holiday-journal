@@ -27,24 +27,34 @@ export default function ImageCarousel({ images }: CarouselProps) {
 	}
 
 	return (
-		<div className="carousel">
-			{images.length > 1 && (
-				<button className="control-button" type="button" onClick={previous}>
-					<ArrowBigLeft className="control-arrow" aria-label="Previous" />
-				</button>
-			)}
+		<div className="image-carousel">
+			<div className="pictures">
+				{images.length > 1 && (
+					<button className="control-button" type="button" onClick={previous}>
+						<ArrowBigLeft className="control-arrow" aria-label="Previous" />
+					</button>
+				)}
 
-			<img
-				className="cover-image"
-				src={images[index]?.source}
-				loading="lazy"
-				alt={images[index]?.description}
-			></img>
+				<img
+					className="cover-image"
+					src={images[index]?.source}
+					loading="lazy"
+					alt={images[index]?.description}
+				></img>
+
+				{images.length > 1 && (
+					<button className="control-button" type="button" onClick={next}>
+						<ArrowBigRight className="control-arrow" />
+					</button>
+				)}
+			</div>
 
 			{images.length > 1 && (
-				<button className="control-button" type="button" onClick={next}>
-					<ArrowBigRight className="control-arrow" />
-				</button>
+				<div className="progress-bar">
+					<p className="progress">
+						[{index + 1}/{images.length}]
+					</p>
+				</div>
 			)}
 		</div>
 	);
