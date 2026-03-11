@@ -29,11 +29,7 @@ export default function HolidayCard({ details }: CardProps): ReactNode {
 				</div>
 
 				<div className="right-column">
-					{details.coverImages.length > 0 ? (
-						<ImageCarousel images={details.coverImages} />
-					) : (
-						<p>No images added yet!</p>
-					)}
+					<ImageCarousel images={details.coverImages} />
 				</div>
 			</div>
 		</div>

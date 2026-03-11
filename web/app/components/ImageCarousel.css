@@ -1,39 +1,30 @@
-.image-carousel {
-  height: 100%;
-}
-
-.pictures {
+.carousel-container {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.cover-image {
-  width: 250px;
-  height: 250px;
+.carousel-control {
+  padding: 3px;
+}
+
+.carousel-control:hover {
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-image {
   border: 1px solid;
   border-radius: 5px;
-  margin: 5px;
-}
-
-.control-button {
-  border: none;
-}
-
-.control-arrow {
-  border: 1px solid;
-  padding: 3px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
 .progress-bar {
+  margin-top: 5px;
   display: flex;
-  align-items: center;
   justify-content: center;
-
-}
-
-.progress {
-  margin: 0;
-  padding: 5px;
+  align-items: center;
 }

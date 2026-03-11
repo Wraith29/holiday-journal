@@ -1,7 +1,7 @@
 import "./ImageCarousel.css";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import { useState } from "react";
 import type { Image } from "@/types/image";
+import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 
 type CarouselProps = {
 	images: Image[];
@@ -26,35 +26,44 @@ export default function ImageCarousel({ images }: CarouselProps) {
 		}
 	}
 
-	return (
-		<div className="image-carousel">
-			<div className="pictures">
-				{images.length > 1 && (
-					<button className="control-button" type="button" onClick={previous}>
-						<ArrowBigLeft className="control-arrow" aria-label="Previous" />
-					</button>
-				)}
-
-				<img
-					className="cover-image"
-					src={images[index]?.source}
-					loading="lazy"
-					alt={images[index]?.description}
-				></img>
-
-				{images.length > 1 && (
-					<button className="control-button" type="button" onClick={next}>
-						<ArrowBigRight className="control-arrow" />
-					</button>
-				)}
+	if (images.length === 0) {
+		return (
+			<div className="image-carousel">
+				<p>No images added yet!</p>
 			</div>
+		);
+	}
 
-			{images.length > 1 && (
-				<div className="progress-bar">
-					<p className="progress">
-						[{index + 1}/{images.length}]
-					</p>
-				</div>
+	return (
+		<div className="carousel-container">
+			{images.length > 1 ? (
+				<>
+					<img
+						className="carousel-image"
+						src={images[index]?.source}
+						alt={images[index]?.description}
+					/>
+
+					<div className="progress-bar">
+						<ArrowBigLeft
+							id="left"
+							className="carousel-control"
+							onClick={previous}
+						/>
+
+						<p>
+							{index + 1}/{images.length}
+						</p>
+
+						<ArrowBigRight
+							id="right"
+							className="carousel-control"
+							onClick={next}
+						/>
+					</div>
+				</>
+			) : (
+				<img className="carousel-image" src={images[0]?.source} alt="hello" />
 			)}
 		</div>
 	);

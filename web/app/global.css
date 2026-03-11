@@ -1,8 +1,10 @@
 * {
   --background: #1D263B;
   --background-darker: #1B2337;
+  --border-color: #D6D3F0;
+  --text-color: #FFFFFF;
 
   background-color: var(--background);
-  border-color: #D6D3F0;
-  color: white;
+  border-color: var(--border-color);
+  color: var(--text-color);
 }
