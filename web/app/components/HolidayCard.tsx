@@ -1,6 +1,7 @@
 import "./HolidayCard.css";
 import { formatDate } from "date-fns";
 import type { ReactNode } from "react";
+import { Link } from "react-router";
 import type { HolidayOverview } from "@/types/holiday";
 import ImageCarousel from "./ImageCarousel";
 
@@ -23,6 +24,10 @@ export default function HolidayCard({ details }: CardProps): ReactNode {
 
 			<div className="card-body">
 				<ImageCarousel images={details.coverImages} />
+
+				<Link className="details-link" to={`/holiday-details/${details.id}`}>
+					View Details
+				</Link>
 			</div>
 		</div>
 	);
