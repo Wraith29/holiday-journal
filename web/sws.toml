@@ -1,3 +1,5 @@
 [general]
 port = 8080
 root = "./assets"
+log-level = "trace"
+log-with-ansi = true

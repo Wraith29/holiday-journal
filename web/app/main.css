@@ -1,0 +1,12 @@
+* {
+  --background-main: #0D2818;
+  --background-light: #04471C;
+  --foreground: #BEE3DB;
+  --purple: #512A4F;
+}
+
+body {
+  background-color: var(--background-main);
+  color: var(--foreground);
+  font-size: large;
+}
