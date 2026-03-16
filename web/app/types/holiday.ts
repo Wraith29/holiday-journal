@@ -8,3 +8,17 @@ export type HolidayOverview = {
 	endDate: string;
 	coverImages: Image[];
 };
+
+export type HolidayDetails = {
+	id: number;
+	name: string;
+	sortName: string;
+	days: {
+		id: number;
+		date: string;
+		activities: {
+			id: number;
+			order: number;
+		}[];
+	}[];
+};
