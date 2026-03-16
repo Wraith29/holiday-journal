@@ -1,0 +1,26 @@
+img.carousel-image {
+  border: 1px solid;
+  border-radius: 3px;
+  width: 12vw;
+}
+
+div.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.control {
+  background-color: var(--background-light);
+  color: var(--foreground);
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+p.carousel-state {
+  margin: 0;
+}

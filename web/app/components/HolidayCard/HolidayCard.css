@@ -1,0 +1,31 @@
+div.holiday-card {
+  background-color: var(--background-light);
+  margin: 0;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p.holiday-name {
+  margin: 0;
+  font-size: large;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+a.details-link {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 3px;
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}

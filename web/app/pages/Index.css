@@ -1,0 +1,15 @@
+p.page-title {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+ol.holidays-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  >li {
+    margin: 10px 0;
+  }
+}
