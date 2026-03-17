@@ -4,6 +4,37 @@
     "title": "Japan 2025",
     "sortName": "japan-2025",
     "startDate": "2025-02-18",
-    "endDate": "2025-03-07"
+    "endDate": "2025-03-07",
+    "coverImages": [
+      {
+        "source": "http://localhost:8080/Japan_Pagoda.jpg",
+        "description": "A Japanese Pagoda with Plum Blossom in the corner"
+      },
+      {
+        "source": "http://localhost:8080/Japan_BigTemple.jpg",
+        "description": "A big Japanese Temple"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Japan 2026",
+    "sortName": "japan-2026",
+    "startDate": "2026-02-18",
+    "endDate": "2026-03-07",
+    "coverImages": [
+      {
+        "source": "http://localhost:8080/Japan_Pagoda.jpg",
+        "description": "A Japanese Pagoda with Plum Blossom in the corner"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Japan 2027",
+    "sortName": "japan-2027",
+    "startDate": "2027-02-18",
+    "endDate": "2027-03-07",
+    "coverImages": []
   }
 ]

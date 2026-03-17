@@ -1,0 +1,21 @@
+div.days {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 0;
+  padding: 15px;
+}
+
+p.days-title {
+  font-size: larger;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+ol.day-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

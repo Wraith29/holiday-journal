@@ -9,16 +9,22 @@ export type HolidayOverview = {
 	coverImages: Image[];
 };
 
+export type Activity = {
+	id: number;
+	order: number;
+	description: string;
+	completed: boolean;
+};
+
+export type Day = {
+	id: number;
+	date: string;
+	activities: Activity[];
+};
+
 export type HolidayDetails = {
 	id: number;
 	name: string;
 	sortName: string;
-	days: {
-		id: number;
-		date: string;
-		activities: {
-			id: number;
-			order: number;
-		}[];
-	}[];
+	days: Day[];
 };

@@ -1,0 +1,38 @@
+p.date {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  text-decoration: underline;
+}
+
+div.day-contents {
+  display: flex;
+}
+
+div.activities {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+p.activities-title {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+ol.activity-list {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li.activity {
+  display: flex;
+}
+
+p.activity-description {
+  margin: 0;
+  padding: 0;
+}

@@ -1,3 +1,9 @@
+div.holiday-page {
+  width: 80vw;
+  margin: 0 10vw;
+  background-color: var(--background-light);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -8,6 +14,15 @@
   border-radius: 5px;
   padding: 5px;
   margin: 5px;
+  color: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--highlight);
+    cursor: pointer;
+  }
 }
 
 .header-title {

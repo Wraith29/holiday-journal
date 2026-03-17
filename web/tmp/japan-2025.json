@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "name": "Japan 2025",
+  "sortName": "japan-2025",
+  "days": [
+    {
+      "id": 1,
+      "date": "2025-02-17",
+      "activities": [
+        {
+          "id": 1,
+          "order": 2,
+          "description": "Get a Subway",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "order": 1,
+          "description": "Drive to Manchester Airport",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2025-02-18",
+      "activities": []
+    }
+  ]
+}
